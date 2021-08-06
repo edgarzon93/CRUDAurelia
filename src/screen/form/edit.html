@@ -1,0 +1,27 @@
+<template>
+  <require from="./edit.css"></require>
+  <div class="container">
+    <h2>Agregar carro</h2>
+    
+     <div class="mb-3">
+       <label class="form-label">Marca</label>
+       <input type="text" class="form-control" aria-describedby="emailHelp" value.bind="new.make">
+     </div>
+     <div class="mb-3">
+       <label class="form-label">Modelo</label>
+       <input type="text" class="form-control"  aria-describedby="emailHelp" value.bind="new.model">
+     </div>
+     <div class="mb-3">
+       <label class="form-label">Color</label>
+       <input type="text" class="form-control"aria-describedby="emailHelp" value.bind="new.color">
+     </div>
+     <div class="mb-3">
+       <label for="exampleInputPassword1" class="form-label">Año</label>
+       <input type="number" class="form-control" id="exampleInputPassword1" value.bind="new.year">
+     </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+
+     <button click.trigger="back()" route-href="route: Home" type="submit" class="btn btn-primary">volver</button>
+
+    </div>
+</template>

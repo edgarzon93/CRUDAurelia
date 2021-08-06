@@ -1,0 +1,49 @@
+.container-all{
+  padding: 0;
+  margin: 5vh;
+}
+.car-form{
+  width: 30%;
+  margin:4vh;
+  
+}
+.car-data-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+.car-container{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.car-data {
+  background-color: #05050a;
+  color:white;
+  width: 25%;
+  border: 1px solid #212529;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+  max-height: 30vh;
+  margin: 2vh;
+}
+.title {
+  text-align: center;
+  margin: 5vh;
+}
+.plus {
+  font-size: 4em;
+}
+
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 0 3vh 0;
+}
