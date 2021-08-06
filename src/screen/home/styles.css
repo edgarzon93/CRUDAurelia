@@ -1,6 +1,6 @@
 .container-all{
   padding: 0;
-  margin: 5vh;
+  margin: 3vh;
 }
 .car-form{
   width: 30%;
@@ -13,28 +13,35 @@
   flex-direction: row;
   justify-content: space-between;
   width: 70%;
+  overflow-y: auto;
+  height: 100%;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .car-container{
   display: flex;
     flex-direction: row;
     align-items: center;
+    height: 80vh;
 }
 .car-data {
-  background-color: #05050a;
-  color:white;
-  width: 25%;
+  background-color: #eaeaea66;
+  min-width: 20%;
   border: 1px solid #212529;
   border-radius: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3vh;
+  padding: 2vh;
   max-height: 30vh;
   margin: 2vh;
 }
 .title {
   text-align: center;
-  margin: 5vh;
+  margin: 2vh;
 }
 .plus {
   font-size: 4em;
@@ -45,5 +52,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 0 0 3vh 0;
+  margin: 0 0 2vh 0;
 }
+
+.button-container2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 5vh 0 0 0;
+}
+

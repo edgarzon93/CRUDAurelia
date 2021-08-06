@@ -2,7 +2,7 @@
   <require from="./styles.css"></require>
   
   <div class="container-all">
-   <h2 class="title">${message}</h2>
+   <h3 class="title">${message}</h3>
    <div class="car-container">
      <div class="car-form">
        <h2 style="text-align: center; margin: 0 0 3vh 0;">Agregar carro</h2>
@@ -16,14 +16,14 @@
           <input type="text" class="form-control"  aria-describedby="emailHelp" value.bind="new.model">
         </div>
         <div class="mb-3">
-          <label class="form-label">Color</label>
-          <input type="text" class="form-control"aria-describedby="emailHelp" value.bind="new.color">
-        </div>
-        <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Año</label>
           <input type="number" class="form-control" id="exampleInputPassword1" value.bind="new.year">
         </div>
-        <div class="button-container">
+        <div class="mb-3">
+          <label class="form-label">Color</label>
+          <input type="text" class="form-control"aria-describedby="emailHelp" value.bind="new.color">
+        </div>
+        <div class="button-container2">
         <button type="submit" class="btn btn-primary">Aceptar</button>
         <button click.trigger="clear()" type="button" class="btn btn-secondary">Limpiar</button>
         </div>
@@ -31,12 +31,9 @@
      </div>
 
     <div class="car-data-container">
-      <!-- <div class="car-data">
-        <h1 class="plus">+</h1>
-      </div> -->
       <div repeat.for="car of cars" class="car-data">
         <div class="button-container">
-          <button click.trigger="editCar(car)" type="button" class="btn btn-light">Editar</button>
+          <button click.trigger="editCar(car)" type="button" class="btn btn-secondary">Editar</button>
           <button click.trigger="deleteCar(car.id)" type="button" class="btn btn-danger">Borrar</button>
         </div>
         <h5 class="card-title">${car.make}</h5>
@@ -44,7 +41,8 @@
         <h6 class="card-title">${car.year}</h6>
         <p class="card-text">${car.color}</p>
       </div>
-    </div>
+    </div> 
+
 
    </div>
   
